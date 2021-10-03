@@ -98,7 +98,7 @@ struct node* createcustomer(struct node *head, int data, int quantity)
             headc = tailc = newnode;
         else
         {
-                        while (temp->next != NULL)
+            while (temp->next != NULL)
                 temp = temp->next;
 
             temp->next = newnode;
@@ -237,6 +237,7 @@ struct node* delete(int data, struct node *head, struct node* tail)
     }
     return head;
 }
+
 int deleteadmin()
 {
     printf("\n\t\t\t\t\tEnter serial no. of the food item which is to be deleted: ");
